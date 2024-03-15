@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctors Page</title>
+</head>
+<body>
+<h1>Welcome,Dr.{{user.username}}</h1>
+<p>First Name: {{user.first_name}}</p>
+<p>Second Name: {{user.second_name}}</p>
+<p>Email: {{user.email}}</p>
+<p>Adress: {{user.address_line1}} , {{user.city}} , {{user.state}}, {{user.pincode}}</p>
+<br>
+<a href="{% url 'create_blog_post' %}">Create New Post</a><br>
+<a href="{% url 'blog_list' %}">List of Post</a>
+</body>
+</html>

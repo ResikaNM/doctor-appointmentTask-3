@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment</title>
+</head>
+<body>
+    <h1>Book Appointment</h1>
+    <h2>Doctor: {{ doctor.name }}-{{doctor.speciality}}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Confirm Appointment">
+    </form>
+</body>
+</html>

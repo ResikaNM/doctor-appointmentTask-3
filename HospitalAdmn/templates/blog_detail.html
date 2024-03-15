@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+     <style>
+        img {
+            max-width: 10%;
+            height: 10%;
+        }
+    </style>
+
+</head>
+<body>
+<h1>{{post.title}}</h1>
+ {% if post.image %}
+    <img src="{{post.image.url}}" alt="{{post.title}}">
+ {% endif %}
+<p>{{post.content}}</p>
+</body>
+</html>
